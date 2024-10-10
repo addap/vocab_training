@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "vocab-training"
+version = "0.1.0"
+description = "Tool to generate TTS audio files for vocabulary exported from Anki"
+authors = ["Adrian Dapprich <adrian@dappri.ch>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+voicevox-client = "^0.4.1"
+PyAudio = "^0.2.14"
+TTS = "^0.22.0"
+pydub = "^0.25.1"
+mutagen = "^1.47.0"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.28.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[virtualenvs]
+#prefer-active-python = true
+in-project = true
